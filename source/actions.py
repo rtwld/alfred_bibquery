@@ -11,7 +11,7 @@ import workflow
 import ccl_bplist
 
 HOME = os.path.expanduser("~")
-BIB_DIR = HOME + "/Library/Caches/Metadata/edu.ucsd.cs.mmccrack.bibdesk/"
+BIB_DIR = HOME + "/Library/Caches/edu.ucsd.cs.mmccrack.bibdesk/"
 
 ################################################
 # AppleScript Functions
@@ -75,11 +75,11 @@ def read_cachedir():
 # Actions
 ################################################   
 
+# See http://www.alfredforum.com/topic/4346-bibquery-search-bibdesk-from-alfred/?p=27273
 def export_cite_command(cite_key):
-    """Return LaTeX cite command"""
-    cmd = "\\cite{{{0}}}".format(cite_key)
-    set_clipboard(cmd)
-    return "Cite Command"
+    """Return cite key"""
+    set_clipboard(cite_key)
+    return "Cite key"
 
 def open_attachment(cite_key):
     """Open PDF attachment in default app"""
