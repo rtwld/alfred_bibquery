@@ -11,7 +11,7 @@ import workflow
 import ccl_bplist
 
 HOME = os.path.expanduser("~")
-BIB_DIR = HOME + "/Library/Caches/edu.ucsd.cs.mmccrack.bibdesk/"
+BIB_DIR = HOME + "/Library/Caches/Metadata/edu.ucsd.cs.mmccrack.bibdesk/"
 
 ################################################
 # AppleScript Functions
